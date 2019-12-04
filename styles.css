@@ -1,0 +1,237 @@
+/*response */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+}
+
+.quote {
+	font-size: 20px;
+	font-family: 'Dancing Script', cursive;
+	opacity: 50%;
+}
+
+body {
+  height: calc(100vh - 8em);
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+	background-color: #4CAF50;
+	margin: 0;
+	background-size: auto;
+	line-height: 1.5;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #4CAF50;
+	padding: 0.5em;
+	z-index: 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+nav a {
+	margin: 0.5em;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.25s;
+}
+
+nav a:hover {
+	color: black;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+img {
+  width: 100%;
+}
+
+.box {
+  width: 600px;
+  height: auto;
+}
+
+.contain01 {
+  object-fit: cover;
+	transform: translate(20px, 100px);
+	border-left: 20px solid #b5025c;
+	border-top: 20px solid #b5025c;
+  border-right: 20px solid #b5025c;
+  border-bottom: 20px solid #b5025c;
+}
+
+.contain02 {
+  object-fit: cover;
+	transform: translate(670px, -320px);
+	border-left: 20px solid #02798b;
+	border-top: 20px solid #02798b;
+	border-right: 20px solid #02798b;
+	border-bottom: 20px solid #02798b;
+}
+
+.contain03 {
+  object-fit: contain;
+	transform: translate(20px, -320px);
+	border-left: 20px solid  #c55da1;
+	border-top: 20px solid  #c55da1;
+	border-right: 20px solid  #c55da1;
+	border-bottom: 20px solid #c55da1;
+}
+
+.contain04 {
+  object-fit: contain;
+	transform: translate(670px, -690px);
+	border-left: 20px solid  #128a7d;
+	border-top: 20px solid  #128a7d;
+	border-right: 20px solid  #128a7d;
+	border-bottom: 20px solid #128a7d;
+}
+
+.contain05 {
+  object-fit: contain;
+	transform: translate(20px, -740px);
+	border-left: 20px solid  #c55d5d;
+	border-top: 20px solid  #c55d5d;
+	border-right: 20px solid  #c55d5d;
+	border-bottom: 20px solid #c55d5d;
+}
+
+.contain06 {
+  object-fit: contain;
+	transform: translate(670px, -1380px);
+	border-left: 20px solid  #32b4a6;
+	border-top: 20px solid  #32b4a6;
+	border-right: 20px solid  #32b4a6;
+	border-bottom: 20px solid #32b4a6;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+	padding-top: 90px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img {
+	display: block;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4CAF50;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  transform: scale(1);
+}
+
+.text {
+	font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.title {
+	font-family: "Montserrat";
+	text-align: left;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	letter-spacing: 1px;
+}
+
+h1 {
+	background-image: url(images/crystal.gif);
+	background-size: contain;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	font-size: 100px;
+
+
+}
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
+
+
+.line-1{
+    position: relative;
+    top: 30%;
+    width: 24em;
+		color: white;
+    margin: 0 auto;
+    border-right: 2px solid #ffeb3b;
+    font-size: 150%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.anim-typewriter{
+  animation: typewriter 5s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color:#ffeb3b;}
+  to{border-right-color: transparent;}
+}
