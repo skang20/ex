@@ -96,25 +96,6 @@ img {
 	border-bottom: 20px solid #128a7d;
 }
 
-.contain05 {
-  object-fit: contain;
-	transform: translate(20px, -740px);
-	border-left: 20px solid  #c55d5d;
-	border-top: 20px solid  #c55d5d;
-	border-right: 20px solid  #c55d5d;
-	border-bottom: 20px solid #c55d5d;
-}
-
-.contain06 {
-  object-fit: contain;
-	transform: translate(670px, -1380px);
-	border-left: 20px solid  #32b4a6;
-	border-top: 20px solid  #32b4a6;
-	border-right: 20px solid  #32b4a6;
-	border-bottom: 20px solid #32b4a6;
-}
-
-
 .column {
   float: left;
   width: 33.33%;
